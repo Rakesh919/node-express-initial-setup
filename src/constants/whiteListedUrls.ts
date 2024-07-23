@@ -1,0 +1,1 @@
+export const WHITE_LIST_URLS = ['http://localhost:4200', 'http://localhost:4200/']
