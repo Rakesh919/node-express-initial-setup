@@ -5,3 +5,8 @@
 (i) npm run build
 (ii) npm run start:reload
 
+
+create a .env file 
+PORT = 
+DB_URI = 
+DB_NAME = 
