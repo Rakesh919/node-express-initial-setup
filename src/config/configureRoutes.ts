@@ -1,10 +1,8 @@
-import { sampleRouter, studentsListRouer, testRouter, userRouter } from '@src/routes'
+import { sampleRouter, testRouter, emailRouter } from '@src/routes'
 import Express from 'express'
 
-export const configureRoutes = (app:Express.Application) => {
+export const configureRoutes = (app: Express.Application) => {
     app.use('/sample', sampleRouter);
     app.use('/test', testRouter);
-
-    app.use('/users',userRouter);
-    app.use('/list',studentsListRouer)
+    app.use('/email', emailRouter)
 }

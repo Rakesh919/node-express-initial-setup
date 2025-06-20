@@ -6,11 +6,11 @@ import dotenv from "dotenv";
 import cors from 'cors'
 import { configureRoutes, corsOptions } from "./config";
 import { errorLogger, errorResponder, notFound, requestIpMiddleware, requestLogger } from "./middlewares";
-import { Server, connectDatabase } from "./providers";
+import { Server} from "./providers";
 
 
 dotenv.config();
-connectDatabase();
+//connectDatabase();
 const PORT = process.env.PORT || 8000;
 const app: Express = express();
 app.use(helmet());
